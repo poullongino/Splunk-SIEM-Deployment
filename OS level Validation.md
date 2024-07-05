@@ -63,3 +63,8 @@ sudo cat /etc/security/limits.conf
 sudo apt install ntpstat
 ntpstat
 ```
+## To Change the OS level host name with the meaningful names (i.e, the respective Splunk component name)
+```bash
+sudo hostnamectl set-hostname YOUR_COMPONENT_NAME
+```
+
