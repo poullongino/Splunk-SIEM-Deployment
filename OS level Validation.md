@@ -4,30 +4,42 @@ cat /etc/os-release
 ```
 
 ## To find Disk partition:
+```bash
 df -kh
+```
 
+```bash
 cd /opt/splunk
 df -kh .
+```
 
+```bash
 cd /opt/splunkdata
 df -kh .
+```
 
-Get CPU Details:
+## Get CPU Details:
+```bash
 lscpu
+```
 
-Get Memory Details:
+## Get Memory Details:
+```bash
 free -h
+```
 
-To check whether splunk user is created:
+## To check whether splunk user is created:
+```bash
 id -u splunk
 lslogins -u splunk
+```
 
-To check if the user is in sudo group as well
-groups splunk
 
-To check if /opt/splunk directory exists and owner of that directory:
+## To check if /opt/splunk directory exists and owner of that directory:
+```bash
 ll /opt/
+```
 
-Verify if Ports are open:
-Ports to be opened at OS Level & Network level Firewalls
+## Verify if Ports are open:
+### Ports to be opened at OS Level & Network level Firewalls
 	• 8000, 8089, 8088, 9997, 8065, 8181, 9887, 8191, 514, 9777
