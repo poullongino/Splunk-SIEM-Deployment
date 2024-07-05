@@ -60,7 +60,6 @@ sudo cat /etc/security/limits.conf
 ```
 ## To check NTP sync status
 ```bash
-sudo apt install ntpstat
 ntpstat
 ```
 ## To Change the OS level host name with the meaningful names (i.e, the respective Splunk component name)
