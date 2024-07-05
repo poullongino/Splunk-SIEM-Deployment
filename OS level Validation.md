@@ -58,4 +58,8 @@ or
 ```bash
 sudo cat /etc/security/limits.conf
 ```
-
+## To check NTP sync status
+```bash
+sudo apt install ntpstat
+ntpstat
+```
