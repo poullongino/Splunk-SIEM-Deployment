@@ -54,4 +54,8 @@ sudo cat /sys/kernel/mm/transparent_hugepage/defrag
 ```bash
 ulimit -a splunk
 ```
+or
+```bash
+sudo cat /etc/security/limits.conf
+```
 
