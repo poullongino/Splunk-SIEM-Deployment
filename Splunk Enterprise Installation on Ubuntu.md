@@ -48,6 +48,11 @@ cd /opt/splunk/bin
 ```bash
 ./splunk start --accept-license  --no-prompt --answer-yes --seed-passwd YOUR_PASSWORD
 ```
+## Set Servername and Default-hostname for the Splunk component
+```bash
+./splunk set servername YOUR_SERVER_NAME
+./splunk set default-hostname YOUR_SERVER_NAME
+```
 ## Exit from the splunk user
 ```bash
 exit
