@@ -9,17 +9,17 @@ Add the below listed lines to forward the data.
 Use your splunk instance IP address & Port number
 
 ```bash
-source tcp_log {
-  file("/var/log/secure");
+source s_network{
+  udp();
 };
 
-destination splunk_tcp {
-  network("35.179.4.112" transport("udp") port(5514));
+destination splunk_udp {
+  network("127.0.0.1" transport("UDP") port(514));
 };
 
 log {
-  source(tcp_log);
-  destination(splunk_tcp);
+  source(s_network);
+  destination(splunk_udp);
 };
 ```
 
