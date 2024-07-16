@@ -82,6 +82,17 @@ Stop the Forwarder, Enable boot start and start the Forwarder again
 /opt/splunkforwarder/bin/splunk enable boot-start -user splunk
 /opt/splunkforwarder/bin/splunk start
 ```
-
 That's it... you have successfully installed Splunk Universal forwarder on Linux..!!
+
+## Connect universal forwarder to Deployment server
+
+```bash
+cd /opt/splunkforwarder/bin
+
+./splunk set deploy-poll YOUR_DEPLOYMENT_SERVER_IP:8089
+
+./splunk restart
+```
+
+
 
