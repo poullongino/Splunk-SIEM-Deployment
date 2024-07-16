@@ -93,7 +93,15 @@ cd /opt/splunkforwarder/bin
 
 ./splunk set deploy-poll YOUR_DEPLOYMENT_SERVER_IP:8089
 
-./splunk restart
+```
+Exit from splunk user & sign in as **root** user
+``` bash
+exit
+sudo su 
+```
+Restart the Universal Forwarder
+```bash
+/opt/splunkforwarder/bin/splunk restart
 ```
 
 
