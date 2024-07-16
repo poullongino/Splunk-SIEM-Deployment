@@ -87,6 +87,8 @@ That's it... you have successfully installed Splunk Universal forwarder on Linux
 ## Connect universal forwarder to Deployment server
 
 ```bash
+sudo su splunk
+
 cd /opt/splunkforwarder/bin
 
 ./splunk set deploy-poll YOUR_DEPLOYMENT_SERVER_IP:8089
