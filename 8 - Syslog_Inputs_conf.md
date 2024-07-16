@@ -1,4 +1,5 @@
-## In Deployment Server
+## In Deployment Server backend
+
 ```bash
 sudo su - splunk
 cd /opt/splunk/etc/deployment-apps/
@@ -19,3 +20,6 @@ sourcetype = tcra:syslog:log
 ```
 
 
+## In Deployment Server UI
+
+Create a server class named "Syslog Data Inputs" & Assign the App "TCRA_Syslog_Input_Configs", Assign the Forwarder client
